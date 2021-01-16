@@ -13,7 +13,7 @@ def get_vexstash_location():
     local_vexStash_root = os.environ.get('LOCAL_VEXSTASH', None)
     default_location = local_vexStash_root
     if not local_vexStash_root:
-        default_location = os.path.join(hou_home, 'vexStash')
+        default_location = os.path.abspath(os.path.join(hou_home, 'vexStash'))
         os.environ['LOCAL_VEXSTASH'] = default_location
     if not os.path.isdir(default_location):
         os.mkdir(default_location)
