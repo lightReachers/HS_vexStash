@@ -11,7 +11,7 @@ vexStash is utility tool  to manage vex snippets from any vex enabled parm (  ve
 5. Start a new session to try it out.
 
 ## Accessing vexStash
-![](https://d2wvmrjymyrujw.cloudfront.net/media/images/tutorial/tutorials/vexstash-vex-code-management-utility/vexStash_context_menu.gif)
+![](https://media.sidefx.com/images/tutorial/tutorials/vexstash-vex-code-management-utility/vexStash_context_menu.gif)
 
 ## Using Load Snippet
-![](https://d2wvmrjymyrujw.cloudfront.net/media/images/tutorial/tutorials/vexstash-vex-code-management-utility/load.gif)
+![](https://media.sidefx.com/images/tutorial/tutorials/vexstash-vex-code-management-utility/load.gif)
