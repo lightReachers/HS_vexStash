@@ -36,14 +36,13 @@ class saveSnippet(QtWidgets.QDialog):
         self.create_widget()
         self.add_layout()
 
-        # self.get_savepath()
+     
 
     def create_widget(self):
         self.class_label = QtWidgets.QLabel('Runs Over(class or bindclass) : ')
         self.class_node = QtWidgets.QComboBox()
         if self.has_class:
             self.class_node.addItems(constant.CLASS_LIST)
-            # print((has_class(self.parm.node())[1]))
             current_class = self.parm.node().parm(has_class(self.parm.node())[1]).evalAsString()
             self.class_node.setCurrentText(current_class)
         else:
@@ -110,8 +109,6 @@ class snippetLoader(QtWidgets.QDialog):
     def __init__(self, parm=None, parent=hou.qt.mainWindow()):
         super(snippetLoader, self).__init__(parent)
         self.setWindowTitle("HS_vexStash - Load vex snippet")
-        # self.setFixedWidth(700)
-        # self.setMinimumHeight(120)
         self.setWindowFlags(self.windowFlags() ^ QtCore.Qt.WindowContextHelpButtonHint)
 
         self.parm = parm
@@ -119,8 +116,6 @@ class snippetLoader(QtWidgets.QDialog):
         self.local_vexStash = constant.get_vexstash_location()
         self.has_class = has_class(self.parm.node())[0]
         self.init_ui()
-        # self.create_widget()
-        # self.add_layout()
         self.get_nodes()
         self.set_current_node()
 
